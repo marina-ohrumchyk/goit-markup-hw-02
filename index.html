@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
@@ -20,7 +20,7 @@
         <a class="logo" href="./index.html"> <span class="accent">Web</span>Studio</a>
 
         <ul class="list-nav list">
-          <li><a class="link-nav" href="./index.html">Студія</a></li>
+          <li><a class="link-nav carrent" href="./index.html">Студія</a></li>
           <li><a class="link-nav" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="link-nav" href="">Контакти</a></li>
         </ul>
@@ -46,7 +46,7 @@
       <!--features-->
       <section class="section">
         <h2 class="section-title">Особливості</h2>
-        <ul class="features-list">
+        <ul class="features-list list">
           <li>
             <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -69,7 +69,7 @@
       <!--specifics-->
       <section class="section">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./img/box1.jpg" alt="компютер" width="370" />
           </li>
@@ -83,9 +83,9 @@
       </section>
 
       <!--team-->
-      <section class="section">
+      <section class="section-team">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="team-list">
+        <ul class="team-list list">
           <li>
             <img src="./img/img.jpg" alt="фото Ігор Дем'яненко" width="370" />
             <h3 class="team-title">Ігор Дем'яненко</h3>
@@ -110,14 +110,13 @@
       </section>
     </main>
 
-    <footer>
-      <a class="logo" href="./index.html">
-        <span class="accent">Web</span> <span class="accent-logo">Studio</span></a
-      >
+    <footer class="footer">
+      <a class="footer-logo" href="./index.html"> <span class="accent">Web</span>Studio</a>
       <address>
-        <ul>
+        <ul class="address-list list">
           <li>
             <a
+              class="address-link"
               href="https://goo.gl/maps/cdmkgBvX4xGakDDQ7"
               target="_blank"
               rel="noopener noreferrer nofollow"
@@ -125,10 +124,10 @@
             </a>
           </li>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>

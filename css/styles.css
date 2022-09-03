@@ -6,7 +6,9 @@
   --fons-color: #f5f5f5;
   --hero-color: #ffffff;
   --footer-color: #2f303a;
-  --card-text: #757575;
+  --card-text-color: #757575;
+  --color-active: #188ce8;
+  --color-fon-team: #f5f4fa;
 }
 
 body {
@@ -21,9 +23,12 @@ body {
 /* logo */
 
 .logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--secondary-tex-color);
 }
@@ -42,6 +47,10 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-tex-color);
+}
+
+.carrent {
+  color: var(--link-color);
 }
 
 .link-nav:hover,
@@ -85,10 +94,18 @@ body {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
+  cursor: pointer;
   letter-spacing: 0.06em;
   background-color: var(--link-color);
   color: var(--hero-color);
 }
+
+.button:active,
+.button:hover,
+.button:focus {
+  color: var(--color-active);
+}
+
 /* section */
 
 .section-title {
@@ -110,6 +127,10 @@ body {
 }
 
 /* team */
+.section-team {
+  background-color: var(--color-fon-team);
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -125,13 +146,83 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--card-text);
+  color: var(--card-text-color);
 }
 
 /* footer */
-footer {
+.footer {
   background-color: var(--footer-color);
+}
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--hero-color);
 }
 .accent-logo {
   color: var(--hero-color);
+}
+
+.address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--hero-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--link-color);
+}
+
+/* portfolio */
+
+/* section work */
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-tex-color);
+}
+
+.work-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--card-text-color);
+}
+
+.section-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-tex-color);
+}
+.button-link:active,
+.button-link:hover,
+.button-link:focus {
+  background-color: var(--link-color);
+  color: var(--hero-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
